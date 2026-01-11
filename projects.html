@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashika | Projects</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Yashika<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="title" style="color: white;">Technical Projects</h2>
+                </div>
+
+                <div class="projects-spotlight">
+                    <!-- Project 1 -->
+                    <div class="spotlight-card animate-in reveal">
+                        <div class="spotlight-image">
+                            <img src="./image/Screenshot 2026-01-05 105557.png" alt="FreshDirect" />
+                        </div>
+                        <div class="spotlight-body">
+                            <div class="spotlight-header">
+                                <h3>FreshDirect</h3>
+                                <div class="spotlight-actions">
+                                    <a href="https://static-web-page-six.vercel.app/" target="_blank"
+                                        title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/yashika29092006/static_web_page" target="_blank"
+                                        title="Source Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p>A high-performance static marketplace interface focusing on modern UI/UX principles and
+                                responsive architecture.</p>
+                            <div class="spotlight-tech">
+                                <span class="tech-pill">Html</span>
+                                <span class="tech-pill">Css</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="spotlight-card animate-in reveal">
+                        <div class="spotlight-image">
+                            <img src="./image/Screenshot 2026-01-05 105313.png" alt="CNGate" />
+                        </div>
+                        <div class="spotlight-body">
+                            <div class="spotlight-header">
+                                <h3>CNG Gate</h3>
+                                <div class="spotlight-actions">
+                                    <a href="https://cngate-project.vercel.app" target="_blank" title="Live Demo"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/yashika29092006/cngate_project" target="_blank"
+                                        title="Source Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p>Full-stack utility for real-time fuel station tracking, featuring availability status and
+                                crowd density monitoring.</p>
+                            <div class="spotlight-tech">
+                                <span class="tech-pill">Html</span>
+                                <span class="tech-pill">Css</span>
+                                <span class="tech-pill">Js</span>
+                                <span class="tech-pill">Python(FastAPI)</span>
+                                <span class="tech-pill">Supabase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 8rem;">
+                    <h2 class="title" style="color: white;">Life Skill Projects</h2>
+                </div>
+
+                <div class="team-slate-grid">
+                    <div class="team-slate-card glass-card animate-in reveal">
+                        <div class="team-slate-img">
+                            <img src="./image/WhatsApp Image 2026-01-08 at 7.38.13 PM.jpeg" alt="Spark Bin" />
+                        </div>
+                        <div class="team-slate-body">
+                            <span class="team-badge">Innovating Hygiene</span>
+                            <h3>Spark Bin</h3>
+                            <p>Smart, hands-free waste management solution designed for modern clinical and workspace
+                                environments.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-slate-card glass-card animate-in reveal">
+                        <div class="team-slate-img">
+                            <img src="./image/WhatsApp Image 2026-01-08 at 7.38.13 PM.jpeg" alt="Workplace Study" />
+                        </div>
+                        <div class="team-slate-body">
+                            <span class="team-badge">Team Strategy</span>
+                            <h3>Workplace Study</h3>
+                            <p>Collaborative research focused on workflow optimization and team communication dynamics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <p>&copy; 2026 YASHIKA S. <span class="footer-dot">•</span> Full Stack Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

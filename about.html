@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashika | About</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Yashika<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Biography</span>
+                    <h2 class="title">Know Me Better</h2>
+                </div>
+
+                <div class="about-bento">
+                    <div class="bento-item main-bio glass-card">
+                        <div class="card-icon"><i class="fas fa-user-tie"></i></div>
+                        <p>
+                            Hi, I’m Yashika, currently training at the FSSA program, where I am learning full-stack
+                            development and
+                            improving my communication and workplace skills. I have worked on multiple projects,
+                            including a static
+                            website called FreshDirect built using HTML and CSS to understand frontend fundamentals like
+                            page
+                            structure and responsive design, and a team project named Spark Bin that helped strengthen
+                            my
+                            communication and teamwork skills. I also developed a full-stack project called CNG Gate
+                            using HTML, CSS,
+                            JavaScript, Python (FastAPI), and Supabase, aimed at showing gas availability and crowd
+                            status to help
+                            users save time, and I am continuously working to grow as a Full Stack Developer.
+                        </p>
+                    </div>
+                    <div class="bento-item about-image-card">
+                        <img src="image/DSC00764 (1).jpg" alt="Photo of Yashika S" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <p>&copy; 2026 YASHIKA S. <span class="footer-dot">•</span> Full Stack Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

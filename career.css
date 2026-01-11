@@ -1,0 +1,105 @@
+.career-category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Balanced 2-column layout */
+    gap: 30px;
+    align-items: stretch;
+    /* Ensures cards in a row have equal height */
+}
+
+.career-matrix-card {
+    padding: 35px;
+    position: relative;
+    border-radius: 20px;
+    background: var(--bg-dim);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.career-matrix-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-8px);
+    background: rgba(0, 255, 163, 0.03);
+    box-shadow: 0 15px 35px rgba(0, 255, 163, 0.06);
+}
+
+.matrix-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.matrix-date {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    font-weight: 700;
+    padding: 4px 12px;
+    background: rgba(0, 255, 163, 0.1);
+    border-radius: 6px;
+}
+
+.matrix-top h4 {
+    font-size: 1.25rem;
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.career-matrix-card p {
+    font-size: 1rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    /* Pushes the link to the bottom */
+}
+
+.matrix-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent-primary);
+    padding-bottom: 4px;
+    transition: var(--transition);
+    align-self: flex-start;
+}
+
+.matrix-link:hover {
+    color: var(--accent-primary);
+    gap: 15px;
+    /* Subtle movement on hover */
+}
+
+/* Timeline vertical line on the left (Visual flourish) */
+.career-matrix-card::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 35px;
+    bottom: 35px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-primary), transparent);
+    opacity: 0.2;
+}
+
+/* Responsive Alignment */
+@media (max-width: 992px) {
+    .career-category-grid {
+        grid-template-columns: 1fr;
+        /* Single column for mobile */
+        gap: 20px;
+    }
+
+    .career-matrix-card {
+        padding: 30px;
+    }
+}

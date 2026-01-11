@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashika | Contact</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Yashika<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="tag">Contact</span>
+                    <h2 class="title" style="color: white;">Let's Connect</h2>
+                </div>
+
+                <div class="contact-bento">
+                    <a href="mailto:yashikaa2529@gmail.com" class="contact-card email glass-card animate-in reveal">
+                        <div class="contact-icon"><i class="fas fa-paper-plane"></i></div>
+                        <div class="contact-info">
+                            <h3>Drop an Email</h3>
+                            <p>yashikaa2529@gmail.com</p>
+                        </div>
+                        <div class="contact-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/yashika-shahul-hameed-a7806b350/" target="_blank"
+                        class="contact-card linkedin glass-card animate-in reveal">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/yashika29092006" target="_blank"
+                        class="contact-card github glass-card animate-in reveal">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <span>GitHub</span>
+                    </a>
+
+                    <div class="contact-card phone glass-card animate-in reveal">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-info">
+                            <h3>Call Me</h3>
+                            <p>+91 72996 62861</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <p>&copy; 2026 YASHIKA S. <span class="footer-dot">•</span> Full Stack Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

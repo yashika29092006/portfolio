@@ -1,0 +1,118 @@
+.contact-bento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 160px;
+    /* Slightly taller for better alignment */
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.contact-card {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: var(--transition);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--glass-border);
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-primary);
+    background: rgba(0, 255, 163, 0.04);
+}
+
+.contact-card.email {
+    grid-column: span 3;
+    grid-row: span 1;
+    justify-content: space-between;
+}
+
+.contact-card.linkedin,
+.contact-card.github {
+    grid-column: span 1;
+    grid-row: span 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.contact-card.phone {
+    grid-column: span 3;
+    grid-row: span 1;
+    justify-content: flex-start;
+}
+
+.contact-icon {
+    width: 65px;
+    height: 65px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--accent-primary);
+    transition: var(--transition);
+}
+
+.contact-card:hover .contact-icon {
+    background: rgba(0, 255, 163, 0.1);
+    border-color: var(--accent-primary);
+    transform: rotate(10deg) scale(1.1);
+}
+
+.contact-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+    color: var(--text-main);
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: var(--text-dim);
+}
+
+.contact-arrow {
+    font-size: 1.4rem;
+    color: var(--text-dim);
+    transition: transform 0.4s ease;
+}
+
+.contact-card:hover .contact-arrow {
+    transform: translateX(10px);
+    color: var(--accent-primary);
+}
+
+/* Mobile Alignment Fixes */
+@media (max-width: 992px) {
+    .contact-bento {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
+
+    .contact-card.email,
+    .contact-card.linkedin,
+    .contact-card.github,
+    .contact-card.phone {
+        grid-column: span 1;
+        flex-direction: row;
+        /* Horizontal layout on mobile */
+        justify-content: flex-start;
+        text-align: left;
+        padding: 25px;
+    }
+
+    .contact-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
+}

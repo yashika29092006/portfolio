@@ -1,0 +1,78 @@
+.about-bento {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    /* Refined alignment for better balance */
+    gap: 30px;
+    align-items: stretch;
+}
+
+.main-bio {
+    padding: 50px;
+    /* Increased padding for more breathing room */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-bio p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dim);
+}
+
+.main-bio strong {
+    color: var(--accent-primary);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 255, 163, 0.1);
+    color: var(--accent-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.about-image-card {
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 400px;
+    /* Ensures the image card has a good height */
+    border: 1px solid var(--glass-border);
+}
+
+.about-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.about-image-card:hover img {
+    transform: scale(1.05);
+    /* Subtle hover effect for the image */
+}
+
+/* Mobile Alignment Fixes */
+@media (max-width: 992px) {
+    .about-bento {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .main-bio {
+        padding: 30px;
+        order: 1;
+        /* Bio text comes first on mobile */
+    }
+
+    .about-image-card {
+        order: 2;
+        min-height: 300px;
+    }
+}

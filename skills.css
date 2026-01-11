@@ -1,0 +1,120 @@
+.skills-container-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    /* More space between blocks */
+    max-width: 1000px;
+    /* Slightly wider for better alignment */
+    margin: 60px auto 0;
+}
+
+.skills-block {
+    position: relative;
+    padding: 20px;
+}
+
+.skills-group-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.skills-group-header i {
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 255, 163, 0.08);
+    /* More subtle background */
+    border: 1px solid rgba(0, 255, 163, 0.3);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-primary);
+    font-size: 1.8rem;
+    box-shadow: 0 10px 20px rgba(0, 255, 163, 0.05);
+}
+
+.skills-group-header h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 80px;
+    /* Spacious alignment */
+}
+
+.expertise-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.expertise-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.expertise-info span:first-child {
+    color: var(--text-main);
+}
+
+.expertise-info span:last-child {
+    color: #4ade80;
+    /* Your requested green percentages */
+    font-family: var(--font-mono);
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.expertise-track {
+    height: 10px;
+    /* Slightly thicker */
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.expertise-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 50px;
+    width: 0;
+    /* Animated by JS */
+    transition: width 1.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    /* Bouncy animation */
+    box-shadow: 0 0 15px rgba(0, 255, 163, 0.2);
+}
+
+/* Mobile Alignment Fixes */
+@media (max-width: 768px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .skills-group-header {
+        margin-bottom: 35px;
+    }
+
+    .skills-group-header i {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .skills-group-header h3 {
+        font-size: 1.6rem;
+    }
+}
