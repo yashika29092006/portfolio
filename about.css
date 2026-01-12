@@ -1,9 +1,8 @@
 .about-bento {
     display: grid;
-    grid-template-columns: 1.4fr 0.6fr;
-    /* Refined alignment for better balance */
-    gap: 30px;
-    align-items: stretch;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 40px;
+    align-items: center;
 }
 
 .main-bio {
@@ -41,17 +40,24 @@
     border-radius: 24px;
     overflow: hidden;
     height: 100%;
-    min-height: 400px;
-    /* Ensures the image card has a good height */
+    min-height: 420px;
     border: 1px solid var(--glass-border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 163, 0.05);
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-image-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    /* Ensures the subject is centered */
     transition: var(--transition);
 }
+
 
 .about-image-card:hover img {
     transform: scale(1.05);
