@@ -79,17 +79,6 @@
     /* Subtle movement on hover */
 }
 
-/* Timeline vertical line on the left (Visual flourish) */
-.career-matrix-card::before {
-    content: '';
-    position: absolute;
-    left: 15px;
-    top: 35px;
-    bottom: 35px;
-    width: 2px;
-    background: linear-gradient(to bottom, var(--accent-primary), transparent);
-    opacity: 0.2;
-}
 
 /* Responsive Alignment */
 @media (max-width: 992px) {
