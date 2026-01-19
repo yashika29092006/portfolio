@@ -27,23 +27,22 @@
 }
 
 .contact-card.email {
-    grid-column: span 3;
+    grid-column: span 2;
     grid-row: span 1;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .contact-card.linkedin,
 .contact-card.github {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 25px;
 }
 
 .contact-card.phone {
-    grid-column: span 3;
+    grid-column: span 2;
     grid-row: span 1;
     justify-content: flex-start;
 }

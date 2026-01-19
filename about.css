@@ -1,7 +1,7 @@
 .about-bento {
     display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    gap: 40px;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 60px;
     align-items: center;
 }
 
@@ -37,16 +37,14 @@
 }
 
 .about-image-card {
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
-    height: 100%;
-    min-height: 420px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border: 1px solid var(--glass-border);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 163, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     transition: var(--transition);
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .about-image-card img {
